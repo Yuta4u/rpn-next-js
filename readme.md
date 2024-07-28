@@ -1,4 +1,4 @@
-# Phase 2: Front End Development
+# Phase 2: NEXT JS
 
 ![image](https://github.com/user-attachments/assets/4e62769d-749f-45e7-9d65-ee1fcec201d0)
 

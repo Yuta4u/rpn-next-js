@@ -1,14 +1,17 @@
+```html
+<h2>Example of code</h2>
+
 # Phase 2: NEXT JS
 
 ![image](https://i.pinimg.com/564x/32/9a/d8/329ad85f4ab2047cae13d582274f9270.jpg)
 
-Selamat datang di phase 2, stage yang kalian tunggu-tunggu, dimana kita akan belajar dunia front end dan melakukan development fullstack dengan gabungan backend dari phase 1.
+Nextjs, adalah fullstack framework dimana Nextjs di bangun di atas React.
 
-## Kenapa Doraemon?
+## Kenapa Nextjs?
 
-Di phase 2 ini kalian akan banyak belajar "sihir", sama seperti kalian menggunakan item-item dari pocket Doraemon. Semakin kalian banyak belajar item tersebut, semakin seru. Karena di front end ini dunia visual, belajar nya bakal lebih semangat karena hasil codingan kalian terlihat di layar. Item-item Doraemon ini sama saja seperti library-library front end yang kita pelajari, karena ada banyak sekali kombinasi framework + library di development front end.
+Nextjs adalah fullstack framework yang di bangun diatas React, beberapa fitur yang di highlight di framework ini adalah SSR (Server Side Rendering) dimana kita dapat mengirim konten yang sudah jadi melalui server dan dikirim ke browser. Dan ada juga fitur routing yang sudah menempel lekat di Nextjs ini, Mempermudah penggunaan developer dalam mengolah routing.
 
-Phase 2 ini terdiri dari 5 minggu yang mencakup berbagai aspek pengembangan front end, mulai dari fundamental hingga fullstack enhancement.
+<span>Phase 2 ini terdiri dari 5 minggu yang mencakup berbagai aspek pengembangan front end, mulai dari fundamental hingga fullstack enhancement.
 
 ## Front End Fundamental (Week 1)
 

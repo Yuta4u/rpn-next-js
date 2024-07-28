@@ -1,6 +1,6 @@
 # Phase 2: NEXT JS
 
-![image](https://github.com/user-attachments/assets/4e62769d-749f-45e7-9d65-ee1fcec201d0)
+![image]([https://github.com/user-attachments/assets/4e62769d-749f-45e7-9d65-ee1fcec201d0](https://i.pinimg.com/564x/32/9a/d8/329ad85f4ab2047cae13d582274f9270.jpg))
 
 Selamat datang di phase 2, stage yang kalian tunggu-tunggu, dimana kita akan belajar dunia front end dan melakukan development fullstack dengan gabungan backend dari phase 1.
 

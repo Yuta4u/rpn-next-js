@@ -82,11 +82,17 @@ export default function Page() {
 lalu kita lihat kembali `localhost:3000/welcome`
 <br/>
 ![image](https://utfs.io/f/bab232c7-3ceb-4c33-8dd1-9a5dad8b2ccf-214y.jpeg)<br/>
-*note* : jika sudah sesuai dengan gambar di atas, berarti kamu telah berhasil membuat route dan page pada Nextjs project
+*note*: jika sudah sesuai dengan gambar di atas, berarti kamu telah berhasil membuat route dan page pada Nextjs project
 
 <br/></br>
 ## (2) Navigation
-untuk membuat navigation kita bisa membuatnya di server atau client side, kalau di server kita bisa menggunakan tag `Link` kalau client kita bisa menggunakan `useRouter()`
+untuk membuat navigation kita bisa membuatnya di server atau client side, kalau di *server side* kita bisa menggunakan tag `Link`, kalau di *client side* kita bisa menggunakan `useRouter()`. Sebelum itu saya ingin kalian download app folder dulu di: https://github.com/Yuta4u/rpn-next-js/blob/main/02-navigation/app.zip <br/> setelah kalian download dan extract app foldernya, kalian ganti app folder kalian dengan app folder yang baru saja kita download.
+<br/><br/>
+lalu kalian jalankan kembali projectnya, maka tampilannya akan seperti ini
+![image](https://utfs.io/f/185d93ab-7eb7-4e30-96ba-80ac7371a6de-8js3ug.jpg)
+*note*: jika sudah sesuai, maka bisa lanjut ke step berikutnya
+<br/>
+
 
 
 

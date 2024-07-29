@@ -33,7 +33,7 @@ Nextjs, adalah fullstack framework yang di bangun di atas React. Nextjs memungki
 ## Main Concepts Nextjs
 1. Routes dan pages
 2. Navigation
-3. Metadata
+3. Assets and Metadata
 4. Styling (Tailwind CSS)
 5. Image
 6. Client vs Server Components
@@ -67,6 +67,12 @@ npm run dev
 ```
 
 ## (1) Routes dan pages
+#### Apa itu Routes dan Pages?
+*Routes* adalah sebuah endpoint unique yang memiliki dimana tiap tiap route memiliki pages / content yang berbeda<br/>
+*Pages* adalah content yang ada di sebuah route
+<br/><br/>
+
+#### Bagaimana cara membuat Routes dan Pages?
 untuk membuat route pada nextjs sangatlah mudah, cukup membuat folder baru didalam app. Mudah bukan?
 oke langsung aja kita buat aja routenya `app/welcome` , dengan ini kamu telah membuat 1 route.<br/>
 jika kamu cek di `localhost:3000/welcome` hasilnya akan seperti gambar di bawah <br/><br/>
@@ -86,6 +92,10 @@ lalu kita lihat kembali `localhost:3000/welcome`
 
 <br/></br>
 ## (2) Navigation
+#### Apa itu Navigation?
+sesuai namanya *Navigation* / navigasi adalah pemindahan pengguna dari *route* satu ke *route* lainnya.
+<br/><br/>
+#### Bagaimana cara menggunakan Navigation pada Nextjs?
 untuk membuat navigation kita bisa membuatnya di server atau client side, kalau di *server side* kita bisa menggunakan tag `Link`, kalau di *client side* kita bisa menggunakan `useRouter()`. Sebelum itu saya ingin kalian download app folder dulu di: https://github.com/Yuta4u/rpn-next-js/blob/main/02-navigation/app.zip <br/> setelah kalian download dan extract app foldernya, kalian ganti app folder kalian dengan app folder yang baru saja kita download.
 <br/><br/>
 lalu kalian jalankan kembali projectnya, maka tampilannya akan seperti ini
@@ -113,4 +123,13 @@ lalu kalian gunakan seperti ini useRouter().push("/"). Tapi agar lebih enak dili
 -Sebenarnya navigate itu bermacam-macam cuman yang paling umum adalah dengan `Link` untuk *server side* dan `useRouter()` untuk *client side*
 
 <br/></br>
-## (3) Metadata
+## (3) Assets and Metadata
+#### Apa itu *Assets* dan *Metadata*?
+#### 📌Assets
+*assets* adalah sekumpulan file statis yang digunakan oleh aplikasi web. Contohnya seperti gambar, font, dan file. 
+
+#### 📌Metadata
+*Metadata* dalam Nextjs biasanya mengacu pada informasi tambahan yang disisipkan ke dalam HTML untuk membantu mesin pencari, media sosial, dan browser memahami konten dan tujuan halaman web. Meta data ini mencakup tag seperti title, description, keywords,
+<br/><br/>
+
+Aa

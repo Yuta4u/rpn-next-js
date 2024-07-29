@@ -148,7 +148,15 @@ export default function Page() {
 jika kalian save, dan lihat ke url `images`:<br/>
 ![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
 <br/>
-kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. []
+kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. [https://github.com/Yuta4u/rpn-next-js/blob/main/03-assets-dan-metadata/public.zip]<br/>
+kalau sudah, taro folder public yang baru saja kalian download luar app kalian(*setara dengan app folder*)
+(**pastikan hanya ada 1 folder public, jika ada public folder lain, kalian hapus saja**).
+
+<br/>
+jika kalian save, dan lihat kembali.<br/>
+![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/>
+*note*: jika gambar sudah muncul, berati kalian bisa lanjut ke langkah selanjutnya.
+
 
 
 

@@ -132,4 +132,29 @@ lalu kalian gunakan seperti ini useRouter().push("/"). Tapi agar lebih enak dili
 *Metadata* dalam Nextjs biasanya mengacu pada informasi tambahan yang disisipkan ke dalam HTML untuk membantu mesin pencari, media sosial, dan browser memahami konten dan tujuan halaman web. Meta data ini mencakup tag seperti title, description, keywords,
 <br/><br/>
 
-Aa
+#### Bagaimana cara menggunakan *Assets* dan *Metadata*?
+oke, kita mulai dari Assets dulu ya, assets pada nextjs itu kuncinya adalah di folder public. Semua yang berhubungan dengan assets harus ada di dalam folder public ini. langsung aja kita praktekkan
+buat route baru `/images/page.jsx` lalu copy code dibawah dan paste ke page.jsx
+
+```
+import Image from "next/image"
+
+export default function Page() {
+  return (
+    <Image src="/renkaji.jpg" width={300} height={300} alt={"renkaji img"} />
+  )
+}
+```
+jika kalian save, dan lihat ke url `images`:<br/>
+![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
+<br/>
+kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. []
+
+
+
+
+*note*: nextjs akan mencari folder `public` sebagai base atau storage file statis kita. Jadi jika kita membutuhkan file statis, kita cukup memanggil file namenya saja, contoh diatas saya butuh gambar renkaji.jpg, saya cukup menuliskan */renkaji.jpg* saja.
+
+
+
+

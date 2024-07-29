@@ -92,7 +92,25 @@ lalu kalian jalankan kembali projectnya, maka tampilannya akan seperti ini
 ![image](https://utfs.io/f/185d93ab-7eb7-4e30-96ba-80ac7371a6de-8js3ug.jpg)
 *note*: jika sudah sesuai, maka bisa lanjut ke step berikutnya
 <br/>
+#### 📌Link
+Link adalah **<ins>SSR Navigate</ins>**<br/>
+oke, kita mulai dari *Link* tag terlebih dahulu, cara pakai *Link* tag ini cukup mudah, cukup export lalu kita bungkus trigger dengan *Link* tag, lalu tambahkan href="". Seperti contoh yang ada kalian buka file pada folder Link, `app/link/page.js`<br/>
+![image](https://utfs.io/f/8631c9d4-3cbb-4325-bd5d-245928066996-mm8jgz.png)
 
+#### 📌useRouter()
+useRouter adalah **<ins>CSR Navigate</ins>**<br/>
+selanjutnya untuk navigate di *client side* kalian cukup mengimport
+```html
+import {useRouter} from "next/navigation"
+```
+lalu kalian gunakan seperti ini useRouter().push("/"). Tapi agar lebih enak dilihat, use router saya tampung di variabel router, jadi cara atau hasil akhirnya ada seperti gambar di bawah
+![image](https://utfs.io/f/bd47bf88-ca2c-4a99-8d96-e55a6f7cf642-5h3g1f.png)
+*note*: karena use router ini hanya bisa berjalan di *client side*, kalian harus menambahkan 'use client' dipaling atas pada file yang berjalan di *client side*
+<br/>
+#### 📌Kesimpulan
+-Jika kalian ingin menggunakan yang berhubungan dengan interaksi client atau sebutannya client side, kalian wajib menambahkan 'use client' dipaling atas pada file.<br/>
+-Contoh jika kalian ingin menggunakan useState/useEffect/useRouter kalian wajib menambahkan 'use client' pada file.<br/>
+-Sebenarnya navigate itu bermacam-macam cuman yang paling umum adalah dengan `Link` untuk *server side* dan `useRouter()` untuk *client side*
 
-
-
+<br/></br>
+## (3) Metadata

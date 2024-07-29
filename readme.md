@@ -33,7 +33,7 @@ Nextjs, adalah fullstack framework yang di bangun di atas React. Nextjs memungki
 ## Main Concepts Nextjs
 1. Routes dan pages
 2. Navigation
-3. Metadata
+3. Assets and Metadata
 4. Styling (Tailwind CSS)
 5. Image
 6. Client vs Server Components
@@ -67,6 +67,12 @@ npm run dev
 ```
 
 ## (1) Routes dan pages
+#### Apa itu Routes dan Pages?
+*Routes* adalah sebuah endpoint unique yang memiliki dimana tiap tiap route memiliki pages / content yang berbeda<br/>
+*Pages* adalah content yang ada di sebuah route
+<br/><br/>
+
+#### Bagaimana cara membuat Routes dan Pages?
 untuk membuat route pada nextjs sangatlah mudah, cukup membuat folder baru didalam app. Mudah bukan?
 oke langsung aja kita buat aja routenya `app/welcome` , dengan ini kamu telah membuat 1 route.<br/>
 jika kamu cek di `localhost:3000/welcome` hasilnya akan seperti gambar di bawah <br/><br/>
@@ -82,11 +88,73 @@ export default function Page() {
 lalu kita lihat kembali `localhost:3000/welcome`
 <br/>
 ![image](https://utfs.io/f/bab232c7-3ceb-4c33-8dd1-9a5dad8b2ccf-214y.jpeg)<br/>
-*note* : jika sudah sesuai dengan gambar di atas, berarti kamu telah berhasil membuat route dan page pada Nextjs project
+*note*: jika sudah sesuai dengan gambar di atas, berarti kamu telah berhasil membuat route dan page pada Nextjs project
 
 <br/></br>
 ## (2) Navigation
-untuk membuat navigation kita bisa membuatnya di server atau client side, kalau di server kita bisa menggunakan tag `Link` kalau client kita bisa menggunakan `useRouter()`
+#### Apa itu Navigation?
+sesuai namanya *Navigation* / navigasi adalah pemindahan pengguna dari *route* satu ke *route* lainnya.
+<br/><br/>
+#### Bagaimana cara menggunakan Navigation pada Nextjs?
+untuk membuat navigation kita bisa membuatnya di server atau client side, kalau di *server side* kita bisa menggunakan tag `Link`, kalau di *client side* kita bisa menggunakan `useRouter()`. Sebelum itu saya ingin kalian download app folder dulu di: https://github.com/Yuta4u/rpn-next-js/blob/main/02-navigation/app.zip <br/> setelah kalian download dan extract app foldernya, kalian ganti app folder kalian dengan app folder yang baru saja kita download.
+<br/><br/>
+lalu kalian jalankan kembali projectnya, maka tampilannya akan seperti ini
+![image](https://utfs.io/f/185d93ab-7eb7-4e30-96ba-80ac7371a6de-8js3ug.jpg)
+*note*: jika sudah sesuai, maka bisa lanjut ke step berikutnya
+<br/>
+#### 📌Link
+Link adalah **<ins>SSR Navigate</ins>**<br/>
+oke, kita mulai dari *Link* tag terlebih dahulu, cara pakai *Link* tag ini cukup mudah, cukup export lalu kita bungkus trigger dengan *Link* tag, lalu tambahkan href="". Seperti contoh yang ada kalian buka file pada folder Link, `app/link/page.js`<br/>
+![image](https://utfs.io/f/8631c9d4-3cbb-4325-bd5d-245928066996-mm8jgz.png)
+
+#### 📌useRouter()
+useRouter adalah **<ins>CSR Navigate</ins>**<br/>
+selanjutnya untuk navigate di *client side* kalian cukup mengimport
+```html
+import {useRouter} from "next/navigation"
+```
+lalu kalian gunakan seperti ini useRouter().push("/"). Tapi agar lebih enak dilihat, use router saya tampung di variabel router, jadi cara atau hasil akhirnya ada seperti gambar di bawah
+![image](https://utfs.io/f/bd47bf88-ca2c-4a99-8d96-e55a6f7cf642-5h3g1f.png)
+*note*: karena use router ini hanya bisa berjalan di *client side*, kalian harus menambahkan 'use client' dipaling atas pada file yang berjalan di *client side*
+<br/>
+#### 📌Kesimpulan
+-Jika kalian ingin menggunakan yang berhubungan dengan interaksi client atau sebutannya client side, kalian wajib menambahkan 'use client' dipaling atas pada file.<br/>
+-Contoh jika kalian ingin menggunakan useState/useEffect/useRouter kalian wajib menambahkan 'use client' pada file.<br/>
+-Sebenarnya navigate itu bermacam-macam cuman yang paling umum adalah dengan `Link` untuk *server side* dan `useRouter()` untuk *client side*
+
+<br/></br>
+## (3) Assets and Metadata
+#### Apa itu *Assets* dan *Metadata*?
+#### 📌Assets
+*assets* adalah sekumpulan file statis yang digunakan oleh aplikasi web. Contohnya seperti gambar, font, dan file. 
+
+#### 📌Metadata
+*Metadata* dalam Nextjs biasanya mengacu pada informasi tambahan yang disisipkan ke dalam HTML untuk membantu mesin pencari, media sosial, dan browser memahami konten dan tujuan halaman web. Meta data ini mencakup tag seperti title, description, keywords,
+<br/><br/>
+
+#### Bagaimana cara menggunakan *Assets* dan *Metadata*?
+oke, kita mulai dari Assets dulu ya, assets pada nextjs itu kuncinya adalah di folder public. Semua yang berhubungan dengan assets harus ada di dalam folder public ini. langsung aja kita praktekkan
+buat route baru `/images/page.jsx` lalu copy code dibawah dan paste ke page.jsx
+
+```
+import Image from "next/image"
+
+export default function Page() {
+  return (
+    <Image src="/renkaji.jpg" width={300} height={300} alt={"renkaji img"} />
+  )
+}
+```
+jika kalian save, dan lihat ke url `images`:<br/>
+![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
+<br/>
+kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. []
+
+
+
+
+*note*: nextjs akan mencari folder `public` sebagai base atau storage file statis kita. Jadi jika kita membutuhkan file statis, kita cukup memanggil file namenya saja, contoh diatas saya butuh gambar renkaji.jpg, saya cukup menuliskan */renkaji.jpg* saja.
+
 
 
 

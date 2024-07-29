@@ -149,18 +149,35 @@ jika kalian save, dan lihat ke url `images`:<br/>
 ![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
 <br/>
 kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. [https://github.com/Yuta4u/rpn-next-js/blob/main/03-assets-dan-metadata/public.zip]<br/>
-kalau sudah, taro folder public yang baru saja kalian download luar app kalian(*setara dengan app folder*)
-(**pastikan hanya ada 1 folder public, jika ada public folder lain, kalian hapus saja**).
+kalau sudah, taro folder public yang baru saja kalian download, diluar app kalian(*setara dengan app folder*)<br/>
+*note*: pastikan hanya ada 1 folder public, jika ada public folder lain, kalian hapus saja
 
-<br/>
 jika kalian save, dan lihat kembali.<br/>
-![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/>
+![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/><br/>
 *note*: jika gambar sudah muncul, berati kalian bisa lanjut ke langkah selanjutnya.
 
+oke sekarang saya akan memberi contoh lain bagaimana cara menggunakan public folder dengan mengganti icon web kita.<br/>
+pada `main.jsx` kalian copy dan ganti Rootlayoutnya dengan code dibawah.
+```
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/rpn-logo.png" type="image/png" />
+      </head>
+      <body className={inter.className}>{children}</body>
+    </html>
+  )
+}
+```
+*note*: pastikan ada file dengan nama yang sama pada href. (**disini saya pakai rpn-logo.png**) kalian bisa dapatkan logonya di [https://github.com/Yuta4u/rpn-next-js/blob/main/03-assets-dan-metadata/logo.zip]<br/>
+maka hasilnya akan seperti gambar dibawah<br/>
+![image](https://utfs.io/f/ca622c7a-2c07-428c-a73d-f6e38d2e2837-flpkuv.jpg)<br/>
 
 
 
 
+<br/><br/>
 *note*: nextjs akan mencari folder `public` sebagai base atau storage file statis kita. Jadi jika kita membutuhkan file statis, kita cukup memanggil file namenya saja, contoh diatas saya butuh gambar renkaji.jpg, saya cukup menuliskan */renkaji.jpg* saja.
 
 

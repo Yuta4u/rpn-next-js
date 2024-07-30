@@ -124,16 +124,13 @@ lalu kalian gunakan seperti ini useRouter().push("/"). Tapi agar lebih enak dili
 
 <br/></br>
 ## (3) Assets and Metadata
-#### Apa itu *Assets* dan *Metadata*?
 #### 📌Assets
+#### Apa itu *Assets*?
 *assets* adalah sekumpulan file statis yang digunakan oleh aplikasi web. Contohnya seperti gambar, font, dan file. 
-
-#### 📌Metadata
-*Metadata* dalam Nextjs biasanya mengacu pada informasi tambahan yang disisipkan ke dalam HTML untuk membantu mesin pencari, media sosial, dan browser memahami konten dan tujuan halaman web. Meta data ini mencakup tag seperti title, description, keywords,
 <br/><br/>
 
-#### Bagaimana cara menggunakan *Assets* dan *Metadata*?
-oke, kita mulai dari Assets dulu ya, assets pada nextjs itu kuncinya adalah di folder public. Semua yang berhubungan dengan assets harus ada di dalam folder public ini. langsung aja kita praktekkan
+#### Bagaimana cara menggunakan *Assets*?
+oke, kita mulai dari Assets dulu ya, assets pada nextjs itu kuncinya ada di folder public. Semua yang berhubungan dengan assets harus ada di dalam folder public ini. langsung aja kita praktekkan.<br/>
 buat route baru `/images/page.jsx` lalu copy code dibawah dan paste ke page.jsx
 
 ```
@@ -145,7 +142,7 @@ export default function Page() {
   )
 }
 ```
-jika kalian save, dan lihat ke url `images`:<br/>
+jika kalian save, dan lihat ke url `/images`:<br/>
 ![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
 <br/>
 kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian download folder public yang sudah disediakan. [https://github.com/Yuta4u/rpn-next-js/blob/main/03-assets-dan-metadata/public.zip]<br/>
@@ -153,8 +150,8 @@ kalau sudah, taro folder public yang baru saja kalian download, diluar app kalia
 *note*: pastikan hanya ada 1 folder public, jika ada public folder lain, kalian hapus saja
 
 jika kalian save, dan lihat kembali.<br/>
-![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/><br/>
-*note*: jika gambar sudah muncul, berati kalian bisa lanjut ke langkah selanjutnya.
+![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/>
+*note*: jika gambar sudah muncul, berati kalian bisa lanjut ke langkah selanjutnya.<br/>
 
 oke sekarang saya akan memberi contoh lain bagaimana cara menggunakan public folder dengan mengganti icon web kita.<br/>
 pada `main.jsx` kalian copy dan ganti Rootlayoutnya dengan code dibawah.
@@ -173,12 +170,25 @@ export default function RootLayout({ children }) {
 *note*: pastikan ada file dengan nama yang sama pada href. (**disini saya pakai rpn-logo.png**) kalian bisa dapatkan logonya di [https://github.com/Yuta4u/rpn-next-js/blob/main/03-assets-dan-metadata/logo.zip]<br/>
 maka hasilnya akan seperti gambar dibawah<br/>
 ![image](https://utfs.io/f/ca622c7a-2c07-428c-a73d-f6e38d2e2837-flpkuv.jpg)<br/>
-
-
-
-
+*note*: pastikan tidak ada favicon.ico pada project app kita.
 <br/><br/>
-*note*: nextjs akan mencari folder `public` sebagai base atau storage file statis kita. Jadi jika kita membutuhkan file statis, kita cukup memanggil file namenya saja, contoh diatas saya butuh gambar renkaji.jpg, saya cukup menuliskan */renkaji.jpg* saja.
+#### Apa itu *Metadata*?
+#### 📌Metadata
+*Metadata* dalam Nextjs biasanya mengacu pada informasi tambahan yang disisipkan ke dalam HTML untuk membantu mesin pencari, media sosial, dan browser memahami konten dan tujuan halaman web. Meta data ini mencakup tag seperti title, description, keywords,
+
+#### Bagaimana cara menggunakan *Metadata*?
+Metadata biasanya ada pada file yang memiliki tag body, contohnya pada project kita kali ini, tag `<body>` kita kali ini ada di layout.js, jadi kita akan memasukkan *metadata* / informasi tambahan pada file tersebut.<br/><br/>
+oke langsung saja kita praktekkan, buka `layout.js` kalian dan ketikkan code di bawah<br/>
+![image](https://utfs.io/f/26c845ed-c271-4800-9419-89a26344d069-5h3g0k.png)<br/>
+Jika kalian teliti lagi, sebenarnya cuman ada perubahan di metadata. Yup betul, seperti itulah cara pemakaian metadata pada nextjs, sebenarnya masih banyak cara yang lain. Seperti mengimport tag `Head` dll. (kalian bisa explore2 sendiri)<br/><br/>
+lalu kalian jalankan dan inspect element pada browser
+![image](https://utfs.io/f/34c004d1-0f90-45d0-9d36-f6f22f7541b2-2e8.png)<br/>
+*note*: jika kalian sudah melihat metadata yang ditambahkan didalam inspect element, berarti kalian berhasil menambahkan metadata.
+<br/><br/>
+#### 📌Kesimpulan
+1. Nextjs assets kuncinya ada di `public` folder, dan posisinya setara dengan `app` folder.
+2. Untuk menambahkan metadata biasanya ada di file yang mempunyai tag `body`.
+
 
 
 

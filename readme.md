@@ -34,11 +34,7 @@ Nextjs, adalah fullstack framework yang di bangun di atas React. Nextjs memungki
 1. Routes dan pages
 2. Navigation
 3. Assets and Metadata
-4. Styling (Tailwind CSS)
-5. Image
-6. Client vs Server Components
-7. Server Actions (POST, PUT, DELETE)
-8. Suspense dan Streaming
+4. Pre-rendering and data fetching (SSG, SSR)
 
 <br/><br/>
 # ====== Mari kita mulai ======

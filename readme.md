@@ -186,6 +186,27 @@ lalu kalian jalankan dan inspect element pada browser
 2. Untuk menambahkan metadata biasanya ada di file yang mempunyai tag `body`.
 
 
+<br/><br/>
+## (4) Pre-rendering and data fetching (SSG, SSR)
+#### 📌Pre-rendering (SSG)
+#### Apa itu *SSG*?
+SSG atau *server side generation* adalah teknik pre-rendering di mana halaman HTML dihasilkan pada saat build time dan bukan saat runtime.
+
+#### Bagaimana cara kerja *SSG*?
+cara kerja *SSG* kurang lebih seperti ini:<br/>
+![image](https://utfs.io/f/ad046ed8-e0a6-407b-b122-a046ad342cdd-11u91q.png)<br/>
+ya, seperti yang kalian lihat,
+1. kita akan membuild app kita
+2. semua akan di build dan di cek, apakah ada route yang memiliki hit api? jika ada maka akan terjadinya *hit api* saat proses build ini.
+3. jika sudah selesai build, maka app bisa di akses dan ketika di akses, dia tidak akan hit api lagi. Itulah kenapa ***SSG*** ini sangat2 cepat karena semua contentnya sudah dibuat sejak awal dan contentnya berupa static, fix dan tidak akan berubah
+
+#### Contoh *SSG*
+saya ingin kalian download 
+
+
+
+
+
 
 
 

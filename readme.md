@@ -201,7 +201,22 @@ ya, seperti yang kalian lihat,
 3. jika sudah selesai build, maka app bisa di akses dan ketika di akses, dia tidak akan hit api lagi. Itulah kenapa ***SSG*** ini sangat2 cepat karena semua contentnya sudah dibuat sejak awal dan contentnya berupa static, fix dan tidak akan berubah
 
 #### Contoh *SSG*
-saya ingin kalian download 
+saya ingin kalian download [https://github.com/Yuta4u/rpn-next-js/blob/main/04-prerendering-datafetching-ssg-ssr/ssg/rpn-article.zip] lalu extract, jika sudah lakukan:
+1. npm install 
+2. npm run build
+3. npm run start
+4. lalu buka `localhost:3000` dibrowser kalian, maka harusnya tampilannya akan seperti ini:<br/>
+![image](https://utfs.io/f/23d8d299-6e2e-410f-8247-5d447c0c2b29-dbn2fn.jpg)<br/>
+nah langkah selanjutnya kalian inspect element lalu<br/>
+![image](https://utfs.io/f/3169f262-9aae-4275-a4df-a915dde00800-22a9.png)<br/>
+jika sudah ikutin langkah-langkah gambar diatas, maka kita bisa lanjut ke step berikutnya.
+oiya mungkin kalian bertanya kenapa harus membuka inspect element?.
+jawabnnya adalah *agar kalian bisa melihat jikalau ada terjadinya komunikasi antara browser ke server / api call*.<br/>
+lalu, kalian klik tombol posts, jika sudah maka kalian ke bagian inspect kalian, maka tidak akan ada terjadinya api call.<br/>
+kenapa demikian? karena sesuai penjelasan diatas, **semua sudah di buat sejak awal build**
+
+
+
 
 
 

@@ -215,6 +215,25 @@ jawabnnya adalah *agar kalian bisa melihat jikalau ada terjadinya komunikasi ant
 lalu, kalian klik tombol posts, jika sudah maka kalian ke bagian inspect kalian, maka tidak akan ada terjadinya api call.<br/>
 kenapa demikian? karena sesuai penjelasan diatas, **semua sudah di buat sejak awal build**
 
+<br/><br/>
+*Penjelasan code*<br/>
+![image](https://utfs.io/f/1eb717fc-0ced-4855-9e14-ab569defe053-6fyxyw.png)<br/>
+*note*: function generateStaticParams hanya akan dijalankan saat proses build, jadi saat development, function ini tidak akan berjalan
+<br/><br/>
+-untuk penjelasan functionnya
+``` html
+export async function generateStaticParams() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const posts = await res.json()
+
+  return posts.map((post) => ({
+    id: post.id.toString(),
+  }))
+}
+```
+posts berisi 100 data array of object, dimana akan kita return dan loop untuk dipanggil id nya, jadi kita akan hit function yang dibawahnya, ya itu function PostPage 100x, yang dimana kita akan mendapatkan 100 page static, ya itu `/posts/1` - `/posts/100` jadi jika kalian mengunjungi `http://localhost:3000/posts/1` sampai `http://localhost:3000/posts/100`, kalian akan merasakan sangat cepat saat berganti page, dan content yang berbeda2
+
+
 
 
 

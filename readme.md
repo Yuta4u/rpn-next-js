@@ -217,10 +217,10 @@ kenapa demikian? karena sesuai penjelasan diatas, **semua sudah di buat sejak aw
 
 <br/><br/>
 *Penjelasan code*<br/>
-![image](https://utfs.io/f/1eb717fc-0ced-4855-9e14-ab569defe053-6fyxyw.png)<br/>
+![image](https://utfs.io/f/dad91827-b8df-4853-b77a-fa632683c6a9-tw1hk6..png)<br/>
 *note*: function generateStaticParams hanya akan dijalankan saat proses build, jadi saat development, function ini tidak akan berjalan
 <br/><br/>
--untuk penjelasan functionnya
+untuk penjelasan functionnya
 ``` html
 export async function generateStaticParams() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -231,7 +231,33 @@ export async function generateStaticParams() {
   }))
 }
 ```
-posts berisi 100 data array of object, dimana akan kita return dan loop untuk dipanggil id nya, jadi kita akan hit function yang dibawahnya, ya itu function PostPage 100x, yang dimana kita akan mendapatkan 100 page static, ya itu `/posts/1` - `/posts/100` jadi jika kalian mengunjungi `http://localhost:3000/posts/1` sampai `http://localhost:3000/posts/100`, kalian akan merasakan sangat cepat saat berganti page, dan content yang berbeda2
+posts berisi 100 data array of object, dimana akan kita return dan loop untuk dipanggil id nya, jadi kita akan hit function yang dibawahnya, ya itu function PostPage 100x, yang dimana kita akan mendapatkan 100 page static, ya itu `/posts/1` - `/posts/100` jadi jika kalian mengunjungi `http://localhost:3000/posts/1` sampai `http://localhost:3000/posts/100`, kalian akan merasakan sangat cepat saat berganti page.
+
+<br/><br/>
+#### 📌Data-fetching (SSR)
+SSR, *server-side rendering* adalah proses merender dibagian server.
+#### Bagaimana cara kerja *SSR*?
+Cara kerja *SSR* adalah, ketika user request maka server akan mengolah seluruh data dan content di server, dan ketika sudah selesai pengolahan, baru server akan mengirimnya ke user / browser.
+#### Contoh *SSR*
+Sebagai contoh kita pakai project yang sama yaitu rpn-article saja, nah coba kalian jalankan 
+```
+npm run dev
+```
+lalu kalian buka browser dan buka localhost kalian, `localhost:3000`<br/>
+lalu kalian buka inspect element dan klik fetch seperti contoh di `SSG`<br/>
+lalu kalian klik button posts, nanti kalian akan melihat ada 2 fetch yang muncul<br/>
+![image](https://utfs.io/f/1d83bea4-d022-431b-b2db-0516a3018fd0-x1zqoa.png)<br/>
+apa kedua fetch tersebut? yup, kedua fetch tersebut adalah data fetch api + content kita yang sudah jadi. Yang sudah di olah di server.
+
+*Penjelasan code*<br/>
+![image](https://utfs.io/f/83e12d4f-8d69-4b9c-8bdc-00ddab7f38fa-5h3fxz.png)<br/>
+Ya, semua file page.jsx yang tidak memiliki *'use client'* dibagian atas, adalah ***SSR***
+Karena page.jsx berjalan di sisi server, Anda bisa langsung melakukan operasi fetch data dari API atau database dalam file tersebut tanpa perlu khawatir tentang keterbatasan atau masalah keamanan yang biasanya ada di sisi klien.
+
+
+
+
+
 
 
 

@@ -254,8 +254,13 @@ apa kedua fetch tersebut? yup, kedua fetch tersebut adalah data fetch api + cont
 Ya, semua file page.jsx yang tidak memiliki *'use client'* dibagian atas, adalah ***SSR***
 Karena page.jsx berjalan di sisi server, Anda bisa langsung melakukan operasi fetch data dari API atau database dalam file tersebut tanpa perlu khawatir tentang keterbatasan atau masalah keamanan yang biasanya ada di sisi klien.
 
+<br/><br/>
+## (5) Dynamic Routes
+#### 📌Dynamic Routes
+#### Apa itu *Dynamic Routes*?
+*Dynamic Routes* adalah route yang bergantung pada parameter tertentu. Misalnya, Anda mungkin memiliki rute article yang terlihat seperti ini: /article/:slug, di mana :slug adalah parameter yang berubah tergantung pada posting yang ingin Anda tampilkan. Ini memungkinkan URL yang lebih jelas dan lebih semantik, seperti /article/will-ai-replace-humans untuk posting dengan slug will-ai-replace-humans.
 
-
+<br/><br/>
 
 
 

@@ -259,8 +259,52 @@ Karena page.jsx berjalan di sisi server, Anda bisa langsung melakukan operasi fe
 #### 📌Dynamic Routes
 #### Apa itu *Dynamic Routes*?
 *Dynamic Routes* adalah route yang bergantung pada parameter tertentu. Misalnya, Anda mungkin memiliki rute article yang terlihat seperti ini: /article/:slug, di mana :slug adalah parameter yang berubah tergantung pada posting yang ingin Anda tampilkan. Ini memungkinkan URL yang lebih jelas dan lebih semantik, seperti /article/will-ai-replace-humans untuk posting dengan slug will-ai-replace-humans.
+<br/><br/>
+#### Apa kegunaan utama *Dynamic Routes*
+kegunaan utama *Dynamic routes* adalah untuk membuat url yang bervariasi dengan content yang sama namun dengan data yang berbeda-beda. Contoh ada route `article/roket`, `article/pesawat` dan `article/helikopter` ketiga route memiliki isi content yang sama, yang membedakan hanya datanya saja. Daripada kita membuat routenya statis satu per satu. kita bisa membuatnya hanya dengan `article/[nama-pesawat]`.
+<br/><br/>
+#### Perbedaan *Routes* dengan *Dynamic Routes*?
+Perbedaannya hanya ada pada penamaan, kalau *routes* biasa dia hanya berupa nama folder, contoh *app/article*. Kalau *dynamic routes* kalian harus menambahkan array untuk membungkus nama folder, contoh *app/article/[slug]*.
+![image](https://utfs.io/f/652ac916-c381-4b51-ac23-640400835fac-ljzg67.png)<br/>
+*note*: untuk dynamic route tidak harus `[slug]`, kalian bisa menggantinya dengan nama parameter yang relevan, contoh `[id]` atau `[name]`
+<br/><br/>
+#### Cara menggunakan *Dynamic Routes*?
+contoh url:`localhost:3000/article/test-route`
+lalu pada dynamic route folder kalian cukup tambahkan *params* pada function utama.
+
+```
+export default function ArticleDetailPage({ params }) {
+  console.log(params, "ini params")
+  return <></>
+}
+```
+maka hasil console.lognya akan seperti ini
+<br/>
+![image](https://utfs.io/f/be6f1571-8046-4d6f-bcfd-0e9c6e4e856a-gpi5b9.jpg)
+*note*: slug adalah nama dynamic route folder.
+
+
+
+
 
 <br/><br/>
+oke, selanjutnya seperti biasa saya ingin kalian mendownload zip di sampung [https://github.com/Yuta4u/rpn-next-js/blob/main/05-dynamic-route/rpn-article.zip]
+setelah sudah selesai download, kalian:
+1. npm install
+2. npm run dev
+3. lalu buka browser `localhost:3000`
+
+setelah sudah, seharusnya tampilannya akan seperti gambar dibawah
+![image](https://utfs.io/f/8c38d758-fd44-45b3-b0c6-3af85b8e8067-2e9.png)
+<br/>
+lalu jika kalian klik buttonnya, kalian akan di arahkan ke `http://localhost:3000/article/will-ai-replace-humans` yak, udah itu aja, terus apa bedanya dengan dynamic routes?
+oke, sekarang kamu ganti dynamic routenya menjadi `/test-route` atau apapun yang kalian mau.
+![image](https://utfs.io/f/4d387027-6466-4cf7-91c8-1f10f89de331-22b5.png)
+<br/>
+oke, sekarang saya ingin kalian lihat code `app/article/[slug]/page.jsx` terlebih dahulu.
+
+
+
 
 
 

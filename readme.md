@@ -302,6 +302,61 @@ oke, sekarang kamu ganti dynamic routenya menjadi `/test-route` atau apapun yang
 ![image](https://utfs.io/f/4d387027-6466-4cf7-91c8-1f10f89de331-22b5.png)
 <br/>
 oke, sekarang saya ingin kalian lihat code `app/article/[slug]/page.jsx` terlebih dahulu.
+<br/>
+jika kalian lihat code baris ke 24, kita memanggil mini component yaiitu *ArticleDetailContent*, dimana mini component ini menerima sebuah value yaitu articleSlug, value articleSlug ini akan dipakai untuk *mengambil data berdasarkan* / *select by* slug (baris ke 6).
+Oiya didalam data, kita hanya memiliki 5 data. Kalian bisa melihat data-datanya pada gambar dibawah.
+```
+[
+    {
+        "id": 1,
+        "slug": "will-ai-replace-humans",
+        "title": "Will AI Replace Humans?",
+        "content": "Since late 2022 AI is on the rise and therefore many people worry whether AI will replace humans. The answer is not that simple. AI is a tool that can be used to automate tasks, but it can also be used to augment human capabilities. The future is not set in stone, but it is clear that AI will play a big role in the future. The question is how we will use it.",
+        "date": "2024-07-01",
+        "image": "ai-robot.jpg"
+    },
+    {
+        "id": 2,
+        "slug": "beaver-plague",
+        "title": "A Plague of Beavers",
+        "content": "Beavers are taking over the world. They are building dams everywhere and flooding entire cities. What can we do to stop them?",
+        "date": "2023-01-02",
+        "image": "beaver.jpg"
+    },
+    {
+        "id": 3,
+        "slug": "couple-cooking",
+        "title": "Spend more time together!",
+        "content": "Cooking together is a great way to spend more time with your partner. It is fun and you get to eat something delicious afterwards. What are you waiting for? Get cooking!",
+        "date": "2024-03-01",
+        "image": "couple-cooking.jpg"
+    },
+    {
+        "id": 4,
+        "slug": "hiking",
+        "title": "Hiking is the best!",
+        "content": "Hiking is a great way to get some exercise and enjoy the great outdoors. It is also a great way to clear your mind and reduce stress. So what are you waiting for? Get out there and start hiking!",
+        "date": "2024-01-01",
+        "image": "hiking.jpg"
+    },
+    {
+        "id": 5,
+        "slug": "landscape",
+        "title": "The beauty of landscape",
+        "content": "Landscape photography is a great way to capture the beauty of nature. It is also a great way to get outside and enjoy the great outdoors. So what are you waiting for? Get out there and start taking some pictures!",
+        "date": "2024-07-24",
+        "image": "landscape.jpg"
+    }
+]
+```
+
+<br/> 
+mungkin setelah kalian lihat datanya, kalian bisa menebak kenapa outputnya adalah 'tidak ada data'. Benar karena dari 5 data diatas tidak ada yang memiliki value slug 'test-route', itulah kenapa outputnya adalah 'tidak ada data' (baris 10 - 13). 
+Coba kalian ganti dynamic routenya menjadi salah satu slug dari 5 data diatas. Contoh, menjadi `localhost:3000/article/landscape` ,maka outputnya akan seperti gambar di bawah.
+<br/>
+
+![image](https://utfs.io/f/3dbbe347-8cb7-4ef8-b940-33d2cd56c9ce-22b6.png)
+<br/> selamat, kalian sudah menyelesaikan basic nextjs.
 
 
 

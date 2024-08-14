@@ -361,9 +361,47 @@ Coba kalian ganti dynamic routenya menjadi salah satu slug dari 5 data diatas. C
 #### Apa itu *Authentication*?
 Authentication adalah proses untuk memverifikasi identitas seseorang atau entitas sebelum memberikan akses ke sistem, data, atau layanan tertentu. Authentication sendiri memiliki banyak cara, salah satunya adalah dengan password based, jwt token, atau OAuth (Open Authorization) atau aplikasi pihak ketiga, untuk pembelajaran saat ini kita akan menggunakan OAuth sebagai authentication.
 
-seperti biasa, kalian downlaod dulu zip disamping
+seperti biasa, kalian downlaod dulu zip disamping [https://github.com/Yuta4u/rpn-next-js/blob/main/06-authentication/rpn-article.zip]
+setelah sudah selesai download, kalian:
+1. npm install
+2. npm run dev
+3. lalu buka browser `localhost:3000`
 
+![image](https://utfs.io/f/c4f54de6-afdc-4907-9024-dc22389142e0-jnoyrt.jpg)
+<br/>
+jika tampilannya sudah seperti diatas, kalian bisa lanjut ke step berikutnya.
 
+<br/><br/>
+oke, pertama-tama saya ingin memperkenalkan package auth kita yaitu clerk, clerk adalah package / libary untuk menghandle authentication. Sebenarnya bukan hanya authentication saja, masih banyak lagi. Cuman kita pakai authnya saja.
+oke langsung saja kalian install dulu packagenya didalam folder yang baru kita extract tadi
+
+```html
+npm install @clerk/nextjs
+```
+
+setelah itu kalian buat file middleware.js
+lalu isi dengan:
+<br/>
+
+```
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server"
+
+const isProtectedRoute = createRouteMatcher(["/profile"])
+
+export default clerkMiddleware((auth, req) => {
+  if (isProtectedRoute(req)) auth().protect()
+})
+
+export const config = {
+  matcher: [
+    // Skip Next.js internals and all static files, unless found in search params
+    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
+    // Always run for API routes
+    "/(api|trpc)(.*)",
+  ],
+}
+```
+*note*: posisi file middleware.js harus setara dengan jsconfig.json
 
 
 

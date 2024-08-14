@@ -359,7 +359,9 @@ Coba kalian ganti dynamic routenya menjadi salah satu slug dari 5 data diatas. C
 <br/> selamat, kalian sudah menyelesaikan basic nextjs.
 ## (6) Authentication
 #### Apa itu *Authentication*?
-Authentication adalah proses untuk memverifikasi identitas seseorang atau entitas sebelum memberikan akses ke sistem, data, atau layanan tertentu. Authentication sendiri memiliki banyak cara, salah satunya adalah dengan password based, jwt token, atau OAuth (Open Authorization) atau aplikasi pihak ketiga, untuk pembelajaran saat ini kita kana menggunakan OAuth.
+Authentication adalah proses untuk memverifikasi identitas seseorang atau entitas sebelum memberikan akses ke sistem, data, atau layanan tertentu. Authentication sendiri memiliki banyak cara, salah satunya adalah dengan password based, jwt token, atau OAuth (Open Authorization) atau aplikasi pihak ketiga, untuk pembelajaran saat ini kita akan menggunakan OAuth sebagai authentication.
+
+seperti biasa, kalian downlaod dulu zip disamping
 
 
 

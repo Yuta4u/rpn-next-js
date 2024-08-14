@@ -371,7 +371,7 @@ setelah sudah selesai download, kalian:
 <br/>
 jika tampilannya sudah seperti diatas, kalian bisa lanjut ke step berikutnya.
 
-<br/><br/>
+#### 📌 Clerk
 oke, pertama-tama saya ingin memperkenalkan package auth kita yaitu clerk, clerk adalah package / libary untuk menghandle authentication. Sebenarnya bukan hanya authentication saja, masih banyak lagi. Cuman kita pakai authnya saja.
 oke langsung saja kalian install dulu packagenya didalam folder yang baru kita extract tadi
 
@@ -404,6 +404,7 @@ export const config = {
 penjelasan code:
 <br/>
 di file ini lah kita bisa menentukan protected route dan sebagainya. Contoh, jika kalian lihat di gambar ada variable `isProtectedRoute` lalu ada value "/profile" yang berarti, route /profile adalah protected route.
+<br/>
 *note*: posisi file middleware.js harus setara dengan jsconfig.json
 <br/><br/>
 oke, jika sudah...kita bungkus web kita dengan `<ClerkProvider>`, buka `app/layout.js` lalu bungkus `{children}` dengan `<ClerkProvider>` seperti gambar di bawah
@@ -416,7 +417,7 @@ lalu langkah terakhir kalian harus membuat `.env.local`, .env ini akan kita paka
 3. lalu tampilannya akan seperti gambar di bawah,
 ![image](https://utfs.io/f/ab8092f7-d56b-4b10-8f50-8aeabf7e845b-jnoyqb.jpg)
 <br/> jika tampilannya sudah sama, kalian cukup ceklis *github* dan *gmail* saja, lalu isi application name sesuai yang kalian mau (saran, ikutin saja seperti digambar)
-4. setelah itu kalian cari *API Keys* di sidebar, lalu kalian copy paste keynya di .env.local (posisi file setara dengan package.json)
+4. setelah itu kalian cari *API Keys* di sidebar, lalu kalian copy paste keynya di .env.local (posisi file .env.local harus setara dengan package.json)
 <br/><br/>
 ![image](https://utfs.io/f/c8b52a5f-c900-40a4-b105-0ec052e86927-22b7.png)
 <br/>
@@ -437,13 +438,22 @@ export default function ProfilePage() {
 
 ```
 <br/>
+
 setelah itu kalian jalankan program kalian, setelah menjalankan program, pada route `localhost:3000/article` kalian klik button profile yang ada di sebelah kanan atas.
 <br/>
 
 ![image](https://utfs.io/f/430d4c8e-994f-482a-bce9-e80c3782b2fb-fnpoyg.jpg)
-
 <br/>
-jika kalian di redirect dan tampilannya sudah seperti gambar diatas, berati kalian sudah berhasil menambahkan authentication clerk pada program kalian.
+jika kalian klik button profile dan di redirect kehalaman lain, dan tampilannya sudah seperti gambar diatas, berati kalian sudah berhasil menambahkan authentication clerk pada program kalian. Oke selanjutnya setelah kalian masuk dengan github/gmail kalian akan masuk ke route *profile*, didalam route *profile* terdapat button sign out, button sign out ini gunanya untuk menghapus auth / hak akses kita pada sistem / program kita.
+<br/>
+*jika ada kendala boleh tanya langsung aja ke discord*
+
+<br/><br/>
+## (7) Typescript
+#### 📌 Typescript
+#### Apa itu *Typescript*?
+TypeScript adalah bahasa pemrograman yang dikembangkan oleh Microsoft yang merupakan superset dari JavaScript. Ini berarti bahwa semua kode JavaScript yang valid juga merupakan kode TypeScript yang valid. Namun, TypeScript memperkenalkan fitur tambahan seperti tipe statis (static typing) yang memungkinkan pengembang untuk mendefinisikan tipe data variabel, fungsi, dan objek dalam kode mereka.
+
 
 
 

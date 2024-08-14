@@ -403,7 +403,7 @@ export const config = {
 ```
 penjelasan code:
 <br/>
-di file ini lah kita bisa menentukan protected route dan sebagainya. (bawaan dari clerknya, jadi cukup di copy paste dan ikutin saja untuk sekarang)
+di file ini lah kita bisa menentukan protected route dan sebagainya. Contoh, jika kalian lihat di gambar ada variable `isProtectedRoute` lalu ada value "/profile" yang berarti, route /profile adalah protected route.
 *note*: posisi file middleware.js harus setara dengan jsconfig.json
 <br/><br/>
 oke, jika sudah...kita bungkus web kita dengan `<ClerkProvider>`, buka `app/layout.js` lalu bungkus `{children}` dengan `<ClerkProvider>` seperti gambar di bawah
@@ -417,8 +417,23 @@ lalu langkah terakhir kalian harus membuat `.env.local`, .env ini akan kita paka
 ![image](https://utfs.io/f/ab8092f7-d56b-4b10-8f50-8aeabf7e845b-jnoyqb.jpg)
 <br/> jika tampilannya sudah sama, kalian cukup ceklis *github* dan *gmail* saja, lalu isi application name sesuai yang kalian mau (saran, ikutin saja seperti digambar)
 4. setelah itu kalian cari *API Keys* di sidebar, lalu kalian copy paste keynya di .env.local (posisi file setara dengan package.json)
-<br/>
+<br/><br/>
 ![image](https://utfs.io/f/c8b52a5f-c900-40a4-b105-0ec052e86927-22b7.png)
+<br/>
+jika sudah, saya ingin kalian copy dan paste code di bawah di file `app/profile/page.jsx`.<br/><br/><br/>
+```
+import { SignOutButton } from "@clerk/nextjs"
+
+export default function ProfilePage() {
+  return (
+    <>
+      <h3>INI PROFILE PAGE</h3>
+      <SignOutButton redirectUrl="/article" />
+    </>
+  )
+}
+
+```
 
 
 

@@ -420,7 +420,9 @@ lalu langkah terakhir kalian harus membuat `.env.local`, .env ini akan kita paka
 <br/><br/>
 ![image](https://utfs.io/f/c8b52a5f-c900-40a4-b105-0ec052e86927-22b7.png)
 <br/>
-jika sudah, saya ingin kalian copy dan paste code di bawah di file `app/profile/page.jsx`.<br/><br/><br/>
+jika sudah, saya ingin kalian copy dan paste code di bawah di file `app/profile/page.jsx`.
+<br/>
+
 ```
 import { SignOutButton } from "@clerk/nextjs"
 
@@ -434,6 +436,16 @@ export default function ProfilePage() {
 }
 
 ```
+<br/>
+setelah itu kalian jalankan program kalian, setelah menjalankan program, pada route `localhost:3000/article` kalian klik button profile yang ada di sebelah kanan atas.
+<br/>
+
+![image](https://utfs.io/f/430d4c8e-994f-482a-bce9-e80c3782b2fb-fnpoyg.jpg)
+
+<br/>
+jika kalian di redirect dan tampilannya sudah seperti gambar diatas, berati kalian sudah berhasil menambahkan authentication clerk pada program kalian.
+
+
 
 
 

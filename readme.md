@@ -356,7 +356,7 @@ Coba kalian ganti dynamic routenya menjadi salah satu slug dari 5 data diatas. C
 <br/>
 
 ![image](https://utfs.io/f/3dbbe347-8cb7-4ef8-b940-33d2cd56c9ce-22b6.png)
-<br/> selamat, kalian sudah menyelesaikan basic nextjs.
+<br/> selamat, kalian sudah menyelesaikan basic nextjs.<br/><br/>
 ## (6) Authentication
 #### Apa itu *Authentication*?
 Authentication adalah proses untuk memverifikasi identitas seseorang atau entitas sebelum memberikan akses ke sistem, data, atau layanan tertentu. Authentication sendiri memiliki banyak cara, salah satunya adalah dengan password based, jwt token, atau OAuth (Open Authorization) atau aplikasi pihak ketiga, untuk pembelajaran saat ini kita akan menggunakan OAuth sebagai authentication.
@@ -449,12 +449,10 @@ jika kalian klik button profile dan di redirect kehalaman lain, dan tampilannya 
 *jika ada kendala boleh tanya langsung aja ke discord*
 <br/><br/>
 ## (7) Typescript
-#### 📌 Typescript
-#### Apa itu *Typescript*?
+#### 📌 Apa itu *Typescript*?
 TypeScript adalah bahasa pemrograman yang dikembangkan oleh Microsoft yang merupakan superset dari JavaScript. Ini berarti bahwa semua kode JavaScript yang valid juga merupakan kode TypeScript yang valid. Namun, TypeScript memperkenalkan fitur tambahan seperti tipe statis (static typing) yang memungkinkan pengembang untuk mendefinisikan tipe data variabel, fungsi, dan objek dalam kode mereka.
 
-<br/>
-#### Cara memakai / menabahkan *Typescript*?
+#### 📌 Cara memakai / menabahkan *Typescript*?
 oke cara menambahkan *typescript* pada project anda adalah:
 1. kalian harus menginstall package-package yang dibutuhkan
 ```
@@ -491,6 +489,14 @@ npm install --save-dev typescript @types/react @types/node
 }
 
 ```
+<br/>
+setelah sudah, kalian ke `app/article/[slug]/page.jsx` lalu ubah atau rename tipe file nya menjadi .tsx
+
+![image](https://utfs.io/f/65b3f76b-c73a-412b-9e3b-e0aa15d06ba4-70ecu4.jpg)
+<br/>
+setelah sudah, kalian tutup vscode kalian buat folder `types/type`, lalu copy code dibawah
+
+
 
 
 

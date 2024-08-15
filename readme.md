@@ -522,7 +522,7 @@ export interface IData {
 }
 ```
 
-typescript memiliki 2 style syntax, pertama adalah dengan *type* dan yang kedua adalah dengan menggunakan *interface* tentu saja masing-masing memiliki plus minus nya sendiri (kalian bisa tanya chat gpt dengan prompt(type vs interface, typescript))
+typescript memiliki 2 style syntax, pertama adalah dengan ***type*** dan yang kedua adalah dengan menggunakan ***interface*** tentu saja masing-masing memiliki plus minus nya sendiri (kalian bisa tanya chat gpt dengan prompt(**type vs interface, typescript**))
 walaupun jenisnya berbeda, tetapi cara penggunaanya tetap sama. 
 
 

@@ -447,13 +447,50 @@ setelah itu kalian jalankan program kalian, setelah menjalankan program, pada ro
 jika kalian klik button profile dan di redirect kehalaman lain, dan tampilannya sudah seperti gambar diatas, berati kalian sudah berhasil menambahkan authentication clerk pada program kalian. Oke selanjutnya setelah kalian masuk dengan github/gmail kalian akan masuk ke route *profile*, didalam route *profile* terdapat button sign out, button sign out ini gunanya untuk menghapus auth / hak akses kita pada sistem / program kita.
 <br/>
 *jika ada kendala boleh tanya langsung aja ke discord*
-
 <br/><br/>
 ## (7) Typescript
 #### 📌 Typescript
 #### Apa itu *Typescript*?
 TypeScript adalah bahasa pemrograman yang dikembangkan oleh Microsoft yang merupakan superset dari JavaScript. Ini berarti bahwa semua kode JavaScript yang valid juga merupakan kode TypeScript yang valid. Namun, TypeScript memperkenalkan fitur tambahan seperti tipe statis (static typing) yang memungkinkan pengembang untuk mendefinisikan tipe data variabel, fungsi, dan objek dalam kode mereka.
 
+<br/>
+#### Cara memakai / menabahkan *Typescript*?
+oke cara menambahkan *typescript* pada project anda adalah:
+1. kalian harus menginstall package-package yang dibutuhkan
+```
+npm install --save-dev typescript @types/react @types/node
+```
+2. kalian harus menambahkan tsconfig.json, lalu copy code dibawah dan paste di tsconfig.json (posisi file tsconfig.json harus setara dengan jsconfig.json)
+```
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
+
+```
 
 
 

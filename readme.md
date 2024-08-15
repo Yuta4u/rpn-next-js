@@ -449,10 +449,17 @@ jika kalian klik button profile dan di redirect kehalaman lain, dan tampilannya 
 *jika ada kendala boleh tanya langsung aja ke discord*
 <br/><br/>
 ## (7) Typescript
-#### 📌 Apa itu *Typescript*?
+## 📌 Typescript
+#### Apa itu *Typescript*?
 TypeScript adalah bahasa pemrograman yang dikembangkan oleh Microsoft yang merupakan superset dari JavaScript. Ini berarti bahwa semua kode JavaScript yang valid juga merupakan kode TypeScript yang valid. Namun, TypeScript memperkenalkan fitur tambahan seperti tipe statis (static typing) yang memungkinkan pengembang untuk mendefinisikan tipe data variabel, fungsi, dan objek dalam kode mereka.
 
-#### 📌 Cara memakai / menabahkan *Typescript*?
+#### Alasan *Typescript* dibuat?
+karena javscript adalah bahasa yang sangat 'loosely' atau dinamis yang berarti javascript sangat bebas. Coba perhatikan gambar dibawah
+![image](https://utfs.io/f/013d650b-5426-4e0f-b34c-22fb5101315c-70ecri.jpg)<br/>
+semua variabel javascript dapat menerima apapun jenis / type data. Maka dari itu kita membutuhkan typescript agar variabel kita fokus pada type data yang dibutuhkan saja.
+
+
+#### Cara memakai / menabahkan *Typescript*?
 oke cara menambahkan *typescript* pada project anda adalah:
 1. kalian harus menginstall package-package yang dibutuhkan
 ```
@@ -493,9 +500,30 @@ npm install --save-dev typescript @types/react @types/node
 setelah sudah, kalian ke `app/article/[slug]/page.jsx` lalu ubah atau rename tipe file nya menjadi .tsx
 
 ![image](https://utfs.io/f/65b3f76b-c73a-412b-9e3b-e0aa15d06ba4-70ecu4.jpg)
-<br/>
+<br/><br/>
 setelah sudah, kalian tutup vscode kalian buat folder `types/type`, lalu copy code dibawah
+```
+export type TData = {
+  id: number
+  slug: string
+  title: string
+  content: string
+  date: string
+  image: string
+}
 
+export interface IData {
+  id: number
+  slug: string
+  title: string
+  content: string
+  date: string
+  image: string
+}
+```
+
+typescript memiliki 2 style syntax, pertama adalah dengan *type* dan yang kedua adalah dengan menggunakan *interface* tentu saja masing-masing memiliki plus minus nya sendiri (kalian bisa tanya chat gpt dengan prompt(type vs interface, typescript))
+walaupun jenisnya berbeda, tetapi cara penggunaanya tetap sama. 
 
 
 

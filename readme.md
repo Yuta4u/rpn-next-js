@@ -524,9 +524,15 @@ export interface IData {
 <br/>
 setelah itu kalian buka lagi `app/article/[slug]/page.jsx` lalu tambahkan code dibawah<br/>
 
-![image](https://utfs.io/f/26c606bc-8948-4ecf-9eae-21f7d8d7a89e-9kv952.jpg)<br/><br/>
+![image](https://utfs.io/f/26c606bc-8948-4ecf-9eae-21f7d8d7a89e-9kv952.jpg)<br/>
 typescript memiliki 2 style syntax, pertama adalah dengan ***type*** dan yang kedua adalah dengan menggunakan ***interface*** tentu saja masing-masing memiliki plus minus nya sendiri (kalian bisa tanya chat gpt dengan prompt(**type vs interface, typescript**))
 walaupun jenisnya berbeda, tetapi cara penggunaanya tetap sama. 
+
+<br/>
+mentrigger pilihan kalian bisa pencet `ctrl + spasi`, lalu akan muncul pilihan dari valeu variable yang sudah kita tentukan dengan menggunakan *Type* ataupun *Interface*.<br/>
+
+![image](https://utfs.io/f/b142b729-b77a-41c0-be49-9c1c5bdd99f6-9kv94a.jpg)
+
 
 
 

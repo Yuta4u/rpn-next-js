@@ -533,6 +533,11 @@ kalian bisa mentrigger pilihan dari value variable yang sudah kita define type /
 
 ![image](https://utfs.io/f/b142b729-b77a-41c0-be49-9c1c5bdd99f6-9kv94a.jpg)
 <br/>
+<br/>
+![image](https://utfs.io/f/dd69451f-316f-4fde-b05b-6503b07920c8-5h3fx4.png)<br/>
+*note*: gambar di atas adalah cara penggunaan types yang bisa kalian lakukan. (saya lebih prefer menggunakan types, karena rekomendasi dari artikel-artikel yang saya baca, jadi saya sarankan kalian menggunakan types saja hahaha).<br/>
+
+
 #### 📌 CHALLANGE
 ubahlah seluruh tipe file menjadi tsx / ts (tsx untuk component, ts untuk non component)<br/>
 jika sudah kalian bisa membandingkan dengan yang sudah saya buat. [https://github.com/Yuta4u/rpn-next-js/blob/main/07-typescript/rpn-article-ts.zip]

@@ -288,7 +288,7 @@ maka hasil console.lognya akan seperti ini
 
 
 <br/><br/>
-oke, selanjutnya seperti biasa saya ingin kalian mendownload zip di sampung [https://github.com/Yuta4u/rpn-next-js/blob/main/05-dynamic-route/rpn-article.zip]
+oke, selanjutnya seperti biasa saya ingin kalian mendownload zip di sampng [https://github.com/Yuta4u/rpn-next-js/blob/main/05-dynamic-route/rpn-article.zip]
 setelah sudah selesai download, kalian:
 1. npm install
 2. npm run dev

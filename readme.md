@@ -529,9 +529,13 @@ typescript memiliki 2 style syntax, pertama adalah dengan ***type*** dan yang ke
 walaupun jenisnya berbeda, tetapi cara penggunaanya tetap sama. 
 
 <br/>
-kalian bisa mentrigger pilihan dari value variable yang sudah kita define type / valuenya dengan menekan `ctrl + spasi` , lalu akan muncul pilihan seperti gambar di bawah.<br/>
+kalian bisa mentrigger pilihan dari value variable yang sudah kita define type / valuenya dengan menekan ***ctrl + spasi***, lalu akan muncul pilihan seperti gambar di bawah.<br/>
 
 ![image](https://utfs.io/f/b142b729-b77a-41c0-be49-9c1c5bdd99f6-9kv94a.jpg)
+<br/>
+#### 📌 CHALLANGE
+ubahlah seluruh tipe file menjadi tsx / ts (tsx untuk component, ts untuk non component)<br/>
+jika sudah kalian bisa membandingkan dengan yang sudah saya buat. 
 
 
 

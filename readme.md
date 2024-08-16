@@ -459,7 +459,7 @@ karena javscript adalah bahasa yang sangat 'loosely' atau dinamis yang berarti j
 semua variabel javascript dapat menerima apapun jenis / type data. Maka dari itu kita membutuhkan typescript agar variabel kita fokus pada type data yang dibutuhkan saja.
 
 
-#### Cara memakai / menabahkan *Typescript*?
+#### Cara memakai / menambahkan *Typescript*?
 oke cara menambahkan *typescript* pada project anda adalah:
 1. kalian harus menginstall package-package yang dibutuhkan
 ```
@@ -501,7 +501,7 @@ setelah sudah, kalian ke `app/article/[slug]/page.jsx` lalu ubah atau rename tip
 
 ![image](https://utfs.io/f/65b3f76b-c73a-412b-9e3b-e0aa15d06ba4-70ecu4.jpg)
 <br/><br/>
-setelah sudah, kalian tutup vscode kalian buat folder `types/type`, lalu copy code dibawah
+setelah sudah, kalian tutup vscode dan buka lagi, lalu kalian buat folder `types/type`, lalu copy code dibawah
 ```
 export type TData = {
   id: number
@@ -521,7 +521,10 @@ export interface IData {
   image: string
 }
 ```
+<br/>
+setelah itu kalian buka lagi `app/article/[slug]/page.jsx` lalu tambahkan code dibawah<br/>
 
+![image](https://utfs.io/f/26c606bc-8948-4ecf-9eae-21f7d8d7a89e-9kv952.jpg)<br/><br/>
 typescript memiliki 2 style syntax, pertama adalah dengan ***type*** dan yang kedua adalah dengan menggunakan ***interface*** tentu saja masing-masing memiliki plus minus nya sendiri (kalian bisa tanya chat gpt dengan prompt(**type vs interface, typescript**))
 walaupun jenisnya berbeda, tetapi cara penggunaanya tetap sama. 
 

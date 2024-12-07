@@ -141,7 +141,7 @@ export default function Page() {
 jika kalian save, dan lihat ke url `/images`:<br/>
 ![image](https://utfs.io/f/c28ec5b1-1c87-4cee-a3ff-477b497fa521-flpkus.jpg)
 <br/>
-kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian memastikan sudah ada folder public, jika belum, kalian buat saja folder public ini(satu level dengan folder app) lalu kalian masukkan sebuah foto ke folder public kalian, jika sudah kalian panggil nama folder tersebut beserta type gambarnya, sebagai contohnya saya memakai foto renkaji disini, dan saya sudah menambahkan foto renkaji.jpg ke folder public. (kalian bisa pakai foto kalian, dan pastikan nama file / foto tidak salah saat pemanggilan di tag <Image>.
+kenapa demikian? karena di folder public kita tidak ada gambar renkaji.jpg. Oke sekarang saya pengen kalian memastikan sudah ada folder public, jika belum, kalian buat saja folder public ini(satu level dengan folder app) lalu kalian masukkan sebuah foto ke folder public kalian, jika sudah kalian panggil nama file / foto tersebut beserta type gambarnya, sebagai contohnya saya memakai foto renkaji disini, dan saya sudah menambahkan foto renkaji.jpg ke folder public. (kalian bisa pakai foto kalian, dan pastikan nama file / foto tidak salah saat pemanggilan di tag <Image>).
 *note*: pastikan hanya ada 1 folder public, jika ada public folder lain, kalian hapus saja
 <br/>
 ![image](https://utfs.io/f/29ebf0a6-56ce-4d51-82a9-0a61173aca35-flpkut.jpg)<br/>

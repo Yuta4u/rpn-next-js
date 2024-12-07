@@ -384,10 +384,11 @@ lalu isi dengan:
 ```
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server"
 
+// SEMUA YANG ADA DIDALAM ADALAH PROTECTED ROUTE, JADI KALIAN MEMERLUKAN OTORISASI SEBELUM MENGAKSES ROUTE TERSEBUT
 const isProtectedRoute = createRouteMatcher(["/profile"])
 
-export default clerkMiddleware((auth, req) => {
-  if (isProtectedRoute(req)) auth().protect()
+export default clerkMiddleware(async (auth, req) => {
+  if (isProtectedRoute(req)) await auth.protect()
 })
 
 export const config = {

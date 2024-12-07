@@ -537,9 +537,11 @@ kalian bisa mentrigger pilihan dari value variable yang sudah kita define type /
 *note*: gambar di atas adalah cara penggunaan types yang bisa kalian lakukan. (saya lebih prefer menggunakan types, karena rekomendasi dari artikel-artikel yang saya baca, jadi saya sarankan kalian menggunakan types saja hahaha).<br/>
 
 
-#### 📌 CHALLANGE
-ubahlah seluruh tipe file menjadi tsx / ts (tsx untuk component, ts untuk non component)<br/>
-jika sudah kalian bisa membandingkan dengan yang sudah saya buat. [https://github.com/Yuta4u/rpn-next-js/blob/main/07-typescript/rpn-article-ts.zip]
+#### 📌 NOTE 
+selamat kamu telah menyelesaikan materi nextjs ini, terus semangat belajar ya...
+<br/>
+btw jika kalian ingin mereview apa yang udah kalian pelajari, kalian bisa clone project di samping [https://github.com/Yuta4u/rpn-next-js/blob/main/07-typescript/rpn-article-final.zip] lalu kalian baca code, dan coba lah untuk <br/> pahami tiap baris code. Semangat
+
 
 
 

@@ -540,7 +540,7 @@ kalian bisa mentrigger pilihan dari value variable yang sudah kita define type /
 #### 📌 NOTE 
 selamat kamu telah menyelesaikan materi nextjs ini, terus semangat belajar ya...
 <br/>
-btw jika kalian ingin mereview apa yang udah kalian pelajari, kalian bisa clone project di samping [https://github.com/Yuta4u/rpn-next-js/blob/main/07-typescript/rpn-article-final.zip] lalu kalian baca code, dan coba lah untuk <br/> pahami tiap baris code. Semangat
+btw jika kalian ingin mereview apa yang udah kalian pelajari, kalian bisa clone project di bawah [https://github.com/Yuta4u/rpn-next-js/blob/main/07-typescript/rpn-article-final.zip] lalu kalian cobalah untuk membaca dan pahami tiap baris code.
 
 
 
